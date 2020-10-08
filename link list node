@@ -1,0 +1,50 @@
+#link list node
+class node:
+    def_ init_(self, data):
+        self.data = data
+        self. next = None
+        
+# function to remove the firt node
+# of the linked list
+def revomeFirstnode(head):
+    if not head:
+        return none
+    temp = head
+    
+    #move the head poiner to the next node
+    head = head.next
+    temp =none
+    return head
+    
+# Function to push node at head
+def push(head, data):
+    if not head:
+        return node(data)
+     temp = node(data)
+     temp.next = head
+     head = temp
+     return head
+     
+# driver code
+if __name__=='__main__':
+
+      head = none
+      
+      # use push() function to construct
+      
+      head = push(head , 10)
+      head = push(head , 25)
+      head = push(head , 122)
+      head = push(head , 17)
+      head = push(head , 1)
+      
+      head =removeFirstnode(head)
+      
+      while(head):
+           print("{}".format(head.data), end ="")
+           head = head.next
+           
+output :
+17 , 122 , 25 , 10
+     
+     
